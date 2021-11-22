@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane fx:id="view" prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+   </rowConstraints>
+   <columnConstraints>
+      <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints halignment="CENTER" minWidth="10.0" prefWidth="100.0" />
+   </columnConstraints>
+   <children>
+      <Label text="Denominación:">
+         <GridPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </GridPane.margin>
+      </Label>
+      <Label text="Inicio del curso:" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </GridPane.margin>
+      </Label>
+      <Label text="Fin del curso:" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </GridPane.margin>
+      </Label>
+      <Label text="Examenes:" GridPane.rowIndex="3">
+         <GridPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </GridPane.margin>
+      </Label>
+      <Label text="Practicas:" GridPane.rowIndex="4">
+         <GridPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </GridPane.margin>
+      </Label>
+      <Label text="Actitud:" GridPane.rowIndex="5">
+         <GridPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </GridPane.margin>
+      </Label>
+      <DatePicker fx:id="dateinicio" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </GridPane.margin></DatePicker>
+      <DatePicker fx:id="datefin" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </GridPane.margin></DatePicker>
+      <TextField fx:id="denominaciontext" GridPane.columnIndex="1" GridPane.columnSpan="2">
+         <GridPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </GridPane.margin></TextField>
+      <Slider fx:id="examenesbar" showTickMarks="true" snapToTicks="true" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <GridPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </GridPane.margin></Slider>
+      <Slider fx:id="practicasbar" showTickMarks="true" snapToTicks="true" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <GridPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </GridPane.margin></Slider>
+      <Slider fx:id="actitudbar" showTickMarks="true" snapToTicks="true" GridPane.columnIndex="1" GridPane.rowIndex="5">
+         <GridPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </GridPane.margin></Slider>
+      <Label fx:id="exameneslabel" alignment="CENTER" contentDisplay="CENTER" text="0%" GridPane.columnIndex="2" GridPane.rowIndex="3">
+         <GridPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </GridPane.margin>
+      </Label>
+      <Label fx:id="practicaslabel" alignment="CENTER" contentDisplay="CENTER" layoutX="210.0" layoutY="107.0" text="0%" GridPane.columnIndex="2" GridPane.rowIndex="4">
+         <GridPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </GridPane.margin>
+      </Label>
+      <Label fx:id="actitudlabel" alignment="CENTER" contentDisplay="CENTER" layoutX="210.0" layoutY="137.0" text="0%" GridPane.columnIndex="2" GridPane.rowIndex="5">
+         <GridPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </GridPane.margin>
+      </Label>
+   </children>
+</GridPane>
